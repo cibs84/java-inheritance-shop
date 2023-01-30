@@ -26,4 +26,8 @@ public class Cuffie extends Prodotto {
 	public void setIsWireless(boolean isWireless) {
 		this.isWireless = isWireless;
 	}
+	
+	public String toString() {
+		return super.toString() + " | Colore: "+colore+" | Tecnologia Wireless: "+(isWireless?"SI":"NO");
+	}
 }

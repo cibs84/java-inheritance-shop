@@ -26,4 +26,8 @@ public class Smartphone extends Prodotto {
 	public void setDimMemoria(int dimMemoria) {
 		this.dimMemoria = dimMemoria;
 	}
+	
+	public String toString() {
+		return super.toString() + " | Codice IMEI: "+codiceIMEI+" | Grandezza Memoria: "+dimMemoria+"Gb";
+	}
 }

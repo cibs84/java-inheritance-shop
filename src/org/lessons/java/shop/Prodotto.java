@@ -56,14 +56,14 @@ public class Prodotto {
 	}
 
 	public String getPrezzoIvato() {
-		return "€ " + this.prezzo * ( this.iva/100 + 1 ) + "iva incl.";
-	}
-	
-	public String getNomeCompletoProdotto() {
-		return this.getCodicePad() + "-" + this.nome;
+		return "€ " + this.prezzo * ( this.iva/100 + 1 ) + " iva incl.";
 	}
 	
 	public String getCodicePad() {
 		return String.format("%08d", this.codice);
+	}
+	
+	public String toString() {
+		return "Codice: "+this.codice+" | Nome: "+this.nome+" | Marca: "+this.marca+" | Prezzo: "+this.prezzo+" iva escl.";
 	}
 }

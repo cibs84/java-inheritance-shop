@@ -27,4 +27,7 @@ public class Televisore extends Prodotto {
 		this.isSmart = isSmart;
 	}
 
+	public String toString() {
+		return super.toString() + " | Dimensione Schermo: "+dimSchermo+" pollici | Tecnologia Smart: "+(isSmart?"SI":"NO");
+	}
 }
